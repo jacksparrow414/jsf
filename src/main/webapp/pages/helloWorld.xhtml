@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<head>
+    <title>JSF Tutorial!</title>
+</head>
+
+<body>
+#{helloWorld.getMessage()}
+</body>
+    <h:head>Using JSF outcome</h:head>
+
+<h:form>
+<!--    不经过相关请求，直接在当前文件夹下查找文件名字-->
+<!--    文档地址： https://www.tutorialspoint.com/jsf/jsf_quick_guide.htm ， Auto Navigation in JSF Page 部分， 截图在resource/jsf-navigation.png-->
+    <h:commandButton value="To Page2" action="page2?faces-redirect=true"/>
+</h:form>
+</html>
